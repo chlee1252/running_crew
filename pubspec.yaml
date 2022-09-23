@@ -34,8 +34,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_naver_map: ^0.10.5
+  flutter_naver_map:
+    git: https://github.com/wnsgh78b/flutter_naver_map.git
   flutter_bloc: ^8.1.1
+  flutter_config: ^2.0.0
 
 dev_dependencies:
   flutter_test:

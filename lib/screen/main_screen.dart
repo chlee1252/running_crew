@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:running_crew/service/base_map.dart';
 import 'package:running_crew/widgets/rounded_button.dart';
 
 import '../widgets/image_text_box.dart';
@@ -13,7 +14,7 @@ class MainScreen extends StatelessWidget {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            const Placeholder(),
+            const BaseMap(),
             Column(
               children: [
                 Center(

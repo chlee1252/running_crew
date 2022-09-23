@@ -216,6 +216,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "8.1.1"
+  flutter_config:
+    dependency: "direct main"
+    description:
+      name: flutter_config
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   flutter_gen_core:
     dependency: transitive
     description:
@@ -240,9 +247,11 @@ packages:
   flutter_naver_map:
     dependency: "direct main"
     description:
-      name: flutter_naver_map
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: "5e1d6aabb3ebb09d5dc852097cf793d6b99d097e"
+      url: "https://github.com/wnsgh78b/flutter_naver_map.git"
+    source: git
     version: "0.10.5"
   flutter_test:
     dependency: "direct dev"

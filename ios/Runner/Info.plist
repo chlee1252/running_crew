@@ -43,6 +43,10 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NMFClientId</key>
+	<string>${NAVER_MAP_CLIENT_KEY}</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>실시간 러닝 경로를 위해 위치 정보를 수집합니다.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 </dict>
