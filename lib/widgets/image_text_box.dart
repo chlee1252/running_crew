@@ -17,7 +17,6 @@ class ImageTextBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    print(title);
     return Container(
       padding: const EdgeInsets.symmetric(
         vertical: 30.0,
@@ -27,9 +26,9 @@ class ImageTextBox extends StatelessWidget {
           color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(20.0))),
       constraints: BoxConstraints(
-        maxWidth: size.width * 0.6,
+        maxWidth: size.width * 0.65,
       ),
-      height: 110.0,
+      height: 120.0,
       child: Row(
         children: [
           const Placeholder(
@@ -42,12 +41,10 @@ class ImageTextBox extends StatelessWidget {
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
                   title,
-                ),
-                const SizedBox(
-                  height: 10.0,
                 ),
                 Text(
                   subText,
