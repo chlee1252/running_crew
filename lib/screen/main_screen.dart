@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:running_crew/service/base_map.dart';
 import 'package:running_crew/widgets/rounded_button.dart';
 
+import '../gen/assets.gen.dart';
 import '../widgets/image_text_box.dart';
 
 class MainScreen extends StatelessWidget {
@@ -10,6 +11,19 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: false,
+        elevation: 0.0,
+        backgroundColor: Colors.white60,
+        title: const Text(
+          "4567",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontSize: 25.0,
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Stack(
           fit: StackFit.expand,
@@ -22,8 +36,12 @@ class MainScreen extends StatelessWidget {
                     margin: const EdgeInsets.only(
                       top: 20.0,
                     ),
-                    child: const ImageTextBox(
-                      padding: EdgeInsets.symmetric(
+                    child: ImageTextBox(
+                      asset: Assets.images.run.svg(
+                        width: 40,
+                        height: 50,
+                      ),
+                      padding: const EdgeInsets.symmetric(
                         vertical: 30.0,
                         horizontal: 20.0,
                       ),

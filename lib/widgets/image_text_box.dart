@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ImageTextBox extends StatelessWidget {
   const ImageTextBox({
     Key? key,
-    // required this.image,
+    required this.asset,
     required this.title,
     this.subText = "",
     this.padding,
@@ -11,7 +11,7 @@ class ImageTextBox extends StatelessWidget {
           key: key,
         );
 
-  // final Image image;
+  final Widget asset;
   final String title;
   final String subText;
   final EdgeInsetsGeometry? padding;
@@ -42,10 +42,7 @@ class ImageTextBox extends StatelessWidget {
       height: 120.0,
       child: Row(
         children: [
-          const Placeholder(
-            fallbackWidth: 40.0,
-            fallbackHeight: 20.0,
-          ),
+          asset,
           const SizedBox(
             width: 20.0,
           ),

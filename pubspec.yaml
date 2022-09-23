@@ -38,6 +38,7 @@ dependencies:
     git: https://github.com/wnsgh78b/flutter_naver_map.git
   flutter_bloc: ^8.1.1
   flutter_config: ^2.0.0
+  flutter_svg: ^1.1.5
 
 dev_dependencies:
   flutter_test:
@@ -54,7 +55,9 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_gen:
+  integrations:
+    flutter_svg: true
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -64,8 +67,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
