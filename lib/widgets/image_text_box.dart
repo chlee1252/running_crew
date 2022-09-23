@@ -16,17 +16,21 @@ class ImageTextBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.symmetric(
         vertical: 30.0,
         horizontal: 10.0,
       ),
       decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(20.0))),
+        color: Colors.white,
+        borderRadius: BorderRadius.all(
+          Radius.circular(
+            20.0,
+          ),
+        ),
+      ),
       constraints: BoxConstraints(
-        maxWidth: size.width * 0.65,
+        maxWidth: MediaQuery.of(context).size.width * 0.65,
       ),
       height: 120.0,
       child: Row(
