@@ -24,7 +24,7 @@ class _BaseMapState extends State<BaseMap> {
       initLocationTrackingMode: LocationTrackingMode.Follow,
       maxZoom: 18,
       minZoom: 12,
-      locationButtonEnable: true,
+      locationButtonEnable: false,
     );
   }
 

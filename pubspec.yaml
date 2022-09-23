@@ -39,6 +39,7 @@ dependencies:
   flutter_bloc: ^8.1.1
   flutter_config: ^2.0.0
   flutter_svg: ^1.1.5
+  floating_bottom_navigation_bar: ^1.5.2
 
 dev_dependencies:
   flutter_test:
