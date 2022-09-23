@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:running_crew/widgets/image_text_box.dart';
+import 'package:running_crew/widgets/rounded_button.dart';
+
+import '../widgets/image_text_box.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -14,12 +16,34 @@ class MainScreen extends StatelessWidget {
             const Placeholder(),
             Column(
               children: [
-                Container(),
-                const Center(
-                    child: ImageTextBox(
-                  title: "내 주변 러닝 코스 알아보기",
-                  subText: "신촌 - 망원동 일대",
-                ))
+                Center(
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                      top: 20.0,
+                    ),
+                    child: const ImageTextBox(
+                      title: "내 주변 러닝 코스 알아보기",
+                      subText: "신촌 - 망원동 일대",
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: RoundedButton(
+                      margin: const EdgeInsets.only(bottom: 40.0),
+                      child: const Text(
+                        "러닝 시작",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17.0,
+                        ),
+                      ),
+                      onPressed: () => print(123123),
+                    ),
+                  ),
+                ),
               ],
             ),
           ],
