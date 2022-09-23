@@ -6,6 +6,7 @@ class ImageTextBox extends StatelessWidget {
     // required this.image,
     required this.title,
     this.subText = "",
+    this.padding,
   }) : super(
           key: key,
         );
@@ -13,21 +14,27 @@ class ImageTextBox extends StatelessWidget {
   // final Image image;
   final String title;
   final String subText;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(
-        vertical: 30.0,
-        horizontal: 10.0,
-      ),
-      decoration: const BoxDecoration(
+      padding: padding,
+      decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.all(
+        borderRadius: const BorderRadius.all(
           Radius.circular(
             20.0,
           ),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: const Offset(0, 3),
+          ),
+        ],
       ),
       constraints: BoxConstraints(
         maxWidth: MediaQuery.of(context).size.width * 0.65,

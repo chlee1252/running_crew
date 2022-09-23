@@ -23,8 +23,12 @@ class MainScreen extends StatelessWidget {
                       top: 20.0,
                     ),
                     child: const ImageTextBox(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 30.0,
+                        horizontal: 20.0,
+                      ),
                       title: "내 주변 러닝 코스 알아보기",
-                      subText: "신촌 - 망원동 일대",
+                      subText: "구로디지털단지 일대",
                     ),
                   ),
                 ),

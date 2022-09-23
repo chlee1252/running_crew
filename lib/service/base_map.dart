@@ -18,11 +18,11 @@ class _BaseMapState extends State<BaseMap> {
     return NaverMap(
       onMapCreated: onMapCreated,
       initialCameraPosition: CameraPosition(
-        target: LatLng(37.566570, 126.978442),
-        zoom: 15,
+        target: LatLng(37.4894382, 126.8969899),
+        zoom: 18,
       ),
       initLocationTrackingMode: LocationTrackingMode.Follow,
-      maxZoom: 17,
+      maxZoom: 18,
       minZoom: 12,
       locationButtonEnable: true,
     );
