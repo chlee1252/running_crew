@@ -2,6 +2,7 @@ import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.da
 import 'package:flutter/material.dart';
 import 'package:running_crew/service/base_map.dart';
 import 'package:running_crew/widgets/rounded_button.dart';
+import 'package:running_crew/widgets/title_appbar.dart';
 
 import '../gen/assets.gen.dart';
 import '../widgets/image_text_box.dart';
@@ -12,18 +13,8 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        elevation: 0.0,
-        backgroundColor: Colors.white60,
-        title: const Text(
-          "4567",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-            fontSize: 25.0,
-          ),
-        ),
+      appBar: const TitleAppBar(
+        title: "4567",
       ),
       body: Stack(
         fit: StackFit.expand,
