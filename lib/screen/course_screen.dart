@@ -39,7 +39,7 @@ class CourseScreen extends StatelessWidget {
                     children: [
                       const Spacer(flex: 1),
                       const Profile(name: "Marc Lee"),
-                      const Spacer(flex: 2),
+                      const Spacer(flex: 6),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: const [
