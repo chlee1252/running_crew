@@ -37,9 +37,11 @@ dependencies:
   flutter_naver_map:
     git: https://github.com/wnsgh78b/flutter_naver_map.git
   flutter_bloc: ^8.1.1
+  bloc: ^8.1.0
   flutter_config: ^2.0.0
   flutter_svg: ^1.1.5
   floating_bottom_navigation_bar: ^1.5.2
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:

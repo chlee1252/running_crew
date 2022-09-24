@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_config/flutter_config.dart';
+import 'package:running_crew/bloc/navigation/cubit/navigation_cubit.dart';
 import 'package:running_crew/screen/main_screen.dart';
 
 void main() async {
@@ -30,12 +32,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Running Crew',
-      theme: ThemeData(
-        primarySwatch: primaryBlack,
+    return BlocProvider<NavigationCubit>(
+      create: (context) => NavigationCubit(),
+      child: MaterialApp(
+        title: 'Running Crew',
+        theme: ThemeData(
+          primarySwatch: primaryBlack,
+        ),
+        home: const MainScreen(),
       ),
-      home: const MainScreen(),
     );
   }
 }
