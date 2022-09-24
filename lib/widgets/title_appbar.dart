@@ -10,7 +10,7 @@ class TitleAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       centerTitle: false,
       elevation: 0.0,
-      backgroundColor: Colors.white60,
+      backgroundColor: Colors.transparent,
       title: Text(
         title,
         style: const TextStyle(

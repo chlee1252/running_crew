@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:running_crew/widgets/rounded_container.dart';
 
 class ImageTextBox extends StatelessWidget {
   const ImageTextBox({
@@ -18,28 +19,10 @@ class ImageTextBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return RoundedContainer(
       padding: padding,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: const BorderRadius.all(
-          Radius.circular(
-            20.0,
-          ),
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            spreadRadius: 5,
-            blurRadius: 7,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
-      constraints: BoxConstraints(
-        maxWidth: MediaQuery.of(context).size.width * 0.65,
-      ),
-      height: 120.0,
+      height: 120,
+      maxWidth: MediaQuery.of(context).size.width * 0.65,
       child: Row(
         children: [
           asset,

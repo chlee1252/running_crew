@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_config/flutter_config.dart';
 import 'package:running_crew/bloc/navigation/cubit/navigation_cubit.dart';
@@ -38,6 +39,9 @@ class MyApp extends StatelessWidget {
         title: 'Running Crew',
         theme: ThemeData(
           primarySwatch: primaryBlack,
+          appBarTheme: const AppBarTheme(
+            systemOverlayStyle: SystemUiOverlayStyle.dark,
+          ),
         ),
         home: const MainScreen(),
       ),
