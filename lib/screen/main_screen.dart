@@ -8,21 +8,16 @@ import 'package:running_crew/screen/crew_screen.dart';
 import 'package:running_crew/screen/home_screen.dart';
 import 'package:running_crew/widgets/title_appbar.dart';
 
-class MainScreen extends StatefulWidget {
+class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
-}
-
-class _MainScreenState extends State<MainScreen> {
-  List<Widget> screens = [
-    const HomeScreen(),
-    const CourseScreen(),
-    const CrewScreen()
-  ];
-  @override
   Widget build(BuildContext context) {
+    List<Widget> screens = [
+      const HomeScreen(),
+      const CourseScreen(),
+      const CrewScreen()
+    ];
     return BlocBuilder<NavigationCubit, NavigationState>(
       builder: (context, state) {
         return Scaffold(
